@@ -1,0 +1,19 @@
+html {
+  background-color: #222;
+}
+.torrenttable {
+  border-collapse: collapse;
+  width: 100%;
+}
+.torrenttable th,
+.torrenttable td {
+  background-color: #444;
+  border: 1px solid #555;
+  color: #f4f4f4;
+  padding: 8px;
+  text-align: left;
+}
+.torrenttable th {
+  background-color: #333;
+  color: #f2f2f2;
+}

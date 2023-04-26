@@ -1,0 +1,19 @@
+{
+  "don't use these urls": [
+    "https://1337x.to/user/TenraiSensei/",
+    "https://anidex.info/user/19484"
+  ],
+  "urls": [
+    "https://torrentgalaxy.to/profile/TenraiSensei",
+    "https://www.anirena.com/?s=Tenrai+",
+    "https://nyaa.si/?f=0&c=0_0&q=Tenrai"
+  ],
+  "torrentgalaxy.endpoint": [
+    "https://torrentgalaxy.to/torrents.php?search={searchterm.replace(' ', '+')}&sort=id&order={mode}&page={pagenum}&sort={args}",
+    "https://torrentgalaxy.to/torrents.php?search={searchterm}&sort={args}&order={mode}&page={pagenum}",
+    "https://torrentgalaxy.to/torrents.php?search=avatar&sort=id&order=desc&page=1"
+  ],
+  "anirena.endpoint": [
+    "https://www.anirena.com/rss.php?s={searchterm.replace(' ', '+')}&t=0&start={100 * pagenum - 1}"
+  ]
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>this is not very good</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <table class="torrenttable">
+      <thead>
+        <tr>
+          <th>torrent</th>
+          <th>torrent name</th>
+          <th>username</th>
+          <th>torrent file dl</th>
+          <th>magnet link</th>
+          <th>seeders</th>
+          <th>leechers</th>
+          <th>size</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in data %}
+        <tr>
+          <td>{{ i[0] }}</td>
+          <td>{{ i[1] }}</td>
+          <td>{{ i[2] }}</td>
+          <td>{{ i[3] }}</td>
+          <td><a href="{{ i[4] }}">magnet</a></td>
+          <td>{{ i[5] }}</td>
+          <td>{{ i[6] }}</td>
+          <td>{{ i[7] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
