@@ -30,7 +30,6 @@ def nyaasearch(searchterm='uzaki', pagenum='1'):
 	for i in tbody:
 		#torrent name
 		tname = (i[1][-1].text)
-		print(tname)
 
 		#Torrent file DL link and torrent magnet link
 		tfdl = ('https://nyaa.si' + i[2][0].attrib['href'])
