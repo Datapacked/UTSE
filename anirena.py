@@ -9,7 +9,7 @@ def anirenasearch(searchterm="uzaki", pagenum=1):
 	return_template = {"torrent": object, "torrentname": object, "username": object, "torrentDL": object, "magnet": object, "seeders": object, "leechers": object, "size": object}
 	for i in return_template:
 		return_template[i] = []
-	flag = False
+	flag = True
 	if flag:
 		#template url, the random integer is there for some reason, i don't know why
 		template = f"https://www.anirena.com/rss.php?s={searchterm.replace(' ', '+')}&t={random.randint(0, 100)}&start={100 * pagenum - 1}"
